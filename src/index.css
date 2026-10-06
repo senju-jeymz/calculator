@@ -1,0 +1,69 @@
+/* 1. Box sizing rules para sa mas madaling layout calculation */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Alisin ang default margins at paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Set up root units at smooth scrolling */
+html {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Siguraduhing full-height ang body at root element */
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+/* 5. Ayusin ang image at media elements para hindi lumagpas */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Alisin ang default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 7. Inherit fonts para sa form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Textarea overflow fix */
+textarea {
+  resize: vertical;
+}
+
+/* 9. Default pointer cursor at button reset */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* 10. Anchor link defaults */
+a {
+  text-decoration: none;
+  color: inherit;
+}
